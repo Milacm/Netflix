@@ -130,7 +130,7 @@ a{
     overflow: hidden;
 }
 
-/*responsive navegador izquierdo*/
+/*responsive logo y navegador izquierdo*/
 
 @media only screen and (max-width: 600px){
     .logo{
@@ -141,8 +141,8 @@ a{
 
 @media only screen and (min-width: 600px) {
     .logo{
-        width: 90px;
-        height: 50px;
+        width: 70px;
+        height: 30px;
     }
 }
 
@@ -177,14 +177,14 @@ a{
     }
 
 @media only screen and (max-width: 600px) {
-.navegacion-izquierda li:nth-child(3),
-.navegacion-izquierda li:nth-child(4),
-.navegacion-izquierda li:nth-child(5),
-.navegacion-izquierda li:nth-child(6),
-.navegacion-izquierda li:nth-child(7),
-.navegacion-izquierda li:nth-child(8){
-    display: none;
-    }
+    .navegacion-izquierda li:nth-child(3),
+    .navegacion-izquierda li:nth-child(4),
+    .navegacion-izquierda li:nth-child(5),
+    .navegacion-izquierda li:nth-child(6),
+    .navegacion-izquierda li:nth-child(7),
+    .navegacion-izquierda li:nth-child(8){
+        display: none;
+        }
 }
 @media only screen and (min-width: 768px){
     .navegacion-izquierda li:nth-child(3),
@@ -209,12 +209,12 @@ a{
 }
 /*responsive navegador derecho*/
 
-@media only screen and (max-width: 600px){
-.navegacion-derecha li:nth-child(1),
-.navegacion-derecha li:nth-child(2),
-.navegacion-derecha li:nth-child(3){
-    width: 25px;
-    }
+@media only screen and (min-width: 600px){
+    .navegacion-derecha li:nth-child(1),
+    .navegacion-derecha li:nth-child(2),
+    .navegacion-derecha li:nth-child(3){
+        width: 25px;
+        }
 }
 
 @media only screen and (min-width: 768px) {
@@ -309,6 +309,7 @@ a{
     background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61),#111);
 }
 
+
    /*catalogo */
 
 .catalogos{
@@ -358,6 +359,13 @@ a{
 
 /* responsive imagenes de peliculas*/
 
+@media only screen and (min-width: 600px){
+    .peliculas img{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media only screen and (max-width: 600px){
     .peliculas img{
         display: flex;
@@ -462,4 +470,10 @@ a{
     font-size: 11px;
     text-align: left;
     
+}
+
+@media only screen and (max-width: 600px) {
+    .construccion{
+        grid-template-columns: 1fr;
+    }
 }
